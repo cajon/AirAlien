@@ -16,10 +16,9 @@ class CreateRooms < ActiveRecord::Migration
       t.boolean :is_internet
       t.integer :price
       t.boolean :active
-      t.references :user, index: true
+      t.references :user, index: true, foreign_key: true
 
       t.timestamps null: false
     end
-    add_foreign_key :rooms, :users
   end
 end

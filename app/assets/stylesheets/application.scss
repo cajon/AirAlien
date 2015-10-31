@@ -2,21 +2,21 @@
 @import "bootstrap";
 @import "toastr";
 
-body {
+body {  
   color: #565a5c;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
 }
 
-.container{
-  width: 80%;
+.container {
+	width: 80%;
 }
 
-.navbar-default{
-  background-color: #fff;
+.navbar-default {
+  background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-brand {
-  color: #ff5a5f;
+  color: #FF5A5F;
   font-size: 2em;
   font-weight: 400;
 }
@@ -33,28 +33,28 @@ body {
 .btn-primary.btn:hover, .btn-primary.btn:focus {
   border-color: #ff7e82;
   border-bottom-color: #fa0008;
-  background-color: #ff7e82;
-  outline: none;
+  background-color: #ff7e82;  
+  outline:none;
 }
 
 .btn-primary.btn:active {
   border-color: #e00007;
-  background-color: #e00007;
-  outline: none;
+  background-color: #e00007;  
+  outline:none;
 }
 
-.btn-primary.btn {
+.btn-default.btn {
   width: 100%;
   border-radius: 2px;
   padding: 10px 0;
-  margin-top: 10px;
+  margin-top: 10px; 
 }
 
 .panel-default .panel-heading {
   color: #565a5c;
   background-color: #edefed;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 400
 }
 
 .row-space-1 {
@@ -79,20 +79,20 @@ body {
   line-height: 25px;
 }
 
-.avatar-small{
-  width: 28px;
+.avatar-small {
+	width: 28px;
 }
 
-.avatar-medium{
-  width: 48px;
+.avatar-medium {
+	width: 48px;
 }
 
-.avatar-large{
-  width: 68px;
+.avatar-large {
+	width: 68px;
 }
 
-.avatar-full{
-  width: 100%;
+.avatar-full {
+	width: 100%;
 }
 
 .form-group {
@@ -113,7 +113,7 @@ body {
   padding: 10px 0;
   font-size: 16px;
   color: #82888a;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #CCC;
 }
 
 .sidebar-link {
@@ -147,22 +147,18 @@ select {
   border-radius: 2px;
   padding: 10px;
   appearance: none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
 }
 
 .select:before {
   content: '\25bc';
   font-size: 1.2em;
-  position: absolute;
-  color: #82888a;
-  top: 40px;
+  position: absolute;  
+  color: #82888A;
+  top: 40px;  
   right: 30px;
-  -webkit-transform: scale(0.84, 0.42);
-     -moz-transform: scale(0.84, 0.42);
-      -ms-transform: scale(0.84, 0.42);
-       -o-transform: scale(0.84, 0.42);
-          transform: scale(0.84, 0.42);
+  transform: scale(0.84, 0.42);
 }
 
 input[type="checkbox"] {
@@ -173,9 +169,9 @@ input[type="checkbox"] {
   vertical-align: top;
   border: 1px solid #c4c4c4;
   border-radius: 2px;
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
+  appearance: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
 }
 
 input[type="checkbox"]:checked:before {
@@ -187,37 +183,31 @@ input[type="checkbox"]:checked:before {
   color: #ff5a5f;
 }
 
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
 
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
 
+.panel-heading.preview {
+  padding: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.panel-heading.preview img{  
+  width: 100%;
+}

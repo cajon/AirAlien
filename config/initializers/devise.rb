@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` on Rails 4+ applications as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '4f3987a89f7219b12a5de72d9d842ae0d6262fb9fa964330f66c486b4f524311bfdab9dda4ee2c6600221a29976aecad5bc4b760fdce0dc6c1654e6f93ee52a0'
+  # config.secret_key = 'bb34fc8dd3a509a5ca1f868b7e99f27d499a527ede80f8a9caf9afb0aa3963469523bae7529bfded0973a7005ebacb78b7efc7e74090780cdf5567ba9c9ed598'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -99,7 +99,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'c6687d157ea462dc60c229ad7e2ab35441fd12c6bb9d472eec8a108d28f773d9248dcebc9b44aa8a191cdcce037a98a2bbf8f5a27c2f1656374244c0f0a34016'
+  # config.pepper = '2247e0bec751331836092790e4b97d528b07ab37ec08441934f10d1f1411e50dc99530274d1533c166513fedc578bcc025ef50c6f8a4162c9c96d4630cd0d61c'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -153,6 +153,9 @@ Devise.setup do |config|
   # The time you want to timeout the user session without activity. After this
   # time the user will be asked for credentials again. Default is 30 minutes.
   # config.timeout_in = 30.minutes
+
+  # If true, expires auth token on session timeout.
+  # config.expire_auth_token_on_timeout = false
 
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.
@@ -260,5 +263,5 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
-  config.omniauth :facebook, '977895025587425', '8bab3b0adfc762ee645b1169fd8f5285', scope: 'email', info_fields: 'email,name'
+  config.omniauth :facebook, '977895025587425', '8bab3b0adfc762ee645b1169fd8f5285', scope: 'email', info_fields: 'email, name'
 end
