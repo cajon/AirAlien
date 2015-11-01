@@ -21,8 +21,8 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 
 gem 'paperclip'
-#gem 'carrierwave'
-#gem 'mini_magick', '3.8.0'
+
+gem 'geocoder'
 
 group :development, :test do
   gem 'byebug'
